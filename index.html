@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form</title>
+<style>
+  /* Some basic styling for the form */
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  input[type="text"], input[type="email"], input[type="date"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<h2>Contact Form</h2>
+
+<form action="project.php" method="post">
+  <label for="name">Name:</label>
+  <br>
+  <input type="text" id="name" name="name" required>
+  <br><br>
+
+  <label for="phone">Phone Number:</label>
+  <br>
+  <input type="text" id="phone" name="phone" placeholder="1234567890" required>
+  <br><br>
+
+  <label for="email">Email:</label>
+  <br>
+  <input type="email" id="email" name="email" placeholder="@gmail.com" required>
+  <br><br>
+
+  <label for="address">Address:</label>
+  <br>
+  <input type="text" id="address" name="address" required>
+  <br><br>
+
+  <label for="dob">Date of Birth:</label>
+  <br>
+  <input type="date" id="dob" name="dob" required>
+  <br><br>
+
+  <label for="gender">Gender:</label>
+  <br>
+  <div>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+  </div>
+  <div>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label>
+  </div>
+  <div>
+    <input type="radio" id="other" name="gender" value="other" required>
+    <label for="other">Other</label>
+  </div>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
